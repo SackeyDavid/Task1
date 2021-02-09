@@ -1,1 +1,26 @@
+// ion-content.start{
+//     // --background: url(../../assets/picture/start.png) 0 0/100% 100% no-repeat;
+// }
 
+ion-footer.foot {
+    border-radius: 15px !important;
+}
+
+
+ion-button.login {
+    text-transform: none !important;
+    --background: #dddcdc;
+    --background-activated: #dddcdc;
+    width: 100%;
+    border-radius: 8px;
+    color: black;
+}
+
+ion-button.signup {
+    text-transform: none !important;
+    --background: #b124d8;
+    --background-activated: #b124d8;
+    width: 100%;
+    color: white;
+    border-radius: 8px;
+}

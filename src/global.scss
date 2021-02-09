@@ -24,3 +24,74 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-footer.foot {
+    border-radius: 15px !important;
+}
+
+.instruction-alert .alert-wrapper {
+
+        .alert-button {
+            text-transform: none;
+            color: #1fcd1f;
+        }
+
+        .alert-input-group {
+            margin-top: -40px;
+        }
+
+        .alert-button-group {
+            justify-content: center;
+            padding-inline-start: 0px;
+            padding-inline-end: 0px;
+
+            .alert-button {
+                padding-inline-start: 35px;
+                padding-inline-end: 35px;
+            }
+        }
+
+        .alert-input-wrapper #paragraph, .alert-input-wrapper #instruction {
+            border-bottom: none;
+            min-height: 50px;
+            
+        }
+        
+    }
+
+    .instruction-modal {
+        --max-height: 32% !important;
+        --max-width: 76%  !important;
+        --border-radius: 4px;
+        
+        
+        .text-area-modal {
+            --placeholder-color: #797878;
+            font-size: 14px;
+            margin-top: -5px;
+        }
+
+        .modal-wrapper{
+            background-color: var(--ion-backdrop-color,#000);
+            // --background: var(--ion-overlay-background-color,var(--ion-background-color,#fff));
+            box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
+        
+        }
+
+    }
+
+
+    .modal-button-group {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+
+        .modal-button {
+            padding-inline-start: 25px;
+            padding-inline-end: 25px;
+            text-transform: none;
+            color: #1fcd1f;
+        }
+    }

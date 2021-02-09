@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Person ID: {{id}}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <div>
+    <br>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input *ngIf="!name" class="add_item" [(ngModel)]="name" placeholder="Name" required="true"  type="text" maxlength="520"></ion-input>
+        <ion-input *ngIf="name" class="add_item" [(ngModel)]="name" required="true"  type="text" maxlength="520"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">DoB</ion-label>
+        <ion-input *ngIf="!dob" class="add_item" [(ngModel)]="dob" placeholder="dob" required="true"  type="text" maxlength="520"></ion-input>
+        <ion-input *ngIf="dob" class="add_item" [(ngModel)]="dob" required="true"  type="text" maxlength="520"></ion-input>
+      </ion-item>
+       
+      <ion-item>
+        <ion-label position="floating">Skills</ion-label>
+        <ion-input *ngIf="!skills" class="add_item" [(ngModel)]="name" placeholder="Skills" required="true"  type="text" maxlength="520"></ion-input>
+        <ion-input *ngIf="skills" class="add_item" [(ngModel)]="skills" required="true"  type="text" maxlength="520"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contact</ion-label>
+        <ion-input *ngIf="!contact" class="add_item" [(ngModel)]="contact" placeholder="Contact" required="true"  type="text" maxlength="520"></ion-input>
+        <ion-input *ngIf="contact" class="add_item" [(ngModel)]="contact" required="true"  type="text" maxlength="520"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <ion-button (click)="save()" style="width: 20%;margin-left: 40%;margin-right: 40%;" shape="round">Save</ion-button>
+</div>
+
+</ion-content>
